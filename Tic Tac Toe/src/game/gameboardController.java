@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
@@ -42,14 +43,16 @@ public class gameboardController {
     @FXML
     private Button btnRestart;
 
+    Image imgX = new Image("http://fc07.deviantart.net/fs71/i/2010/049/4/e/The_Letter_X_by_xelenelunny.jpg");
+    Image imgO = new Image("http://www.westonsigns.com/images/P/WSCL1_O_FIRE-01.jpg");
     @FXML
     void restartClicked(ActionEvent event) {
-
+    	
     }
 
     @FXML
     void setImage(MouseEvent event) {
-
+    	
     }
 
 }
