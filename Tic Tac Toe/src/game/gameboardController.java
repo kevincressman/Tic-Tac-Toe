@@ -52,7 +52,11 @@ public class gameboardController {
 
     @FXML
     void setImage(MouseEvent event) {
-    	
+    	Object source = event.getSource();
+    	if(source instanceof ImageView){
+    		ImageView iv = (ImageView) source;
+    		System.out.println(iv.getId());
+    	}
     }
 
 }

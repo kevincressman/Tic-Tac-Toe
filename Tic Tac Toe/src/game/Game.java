@@ -7,7 +7,7 @@ public class Game {
 		public MoveResult makeMove(){
 			
 			//if they click this
-			if (board.)
+//			if (board.)
 			return MoveResult.InvalidMove;	
 		}
 		
