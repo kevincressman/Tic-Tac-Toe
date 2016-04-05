@@ -2,18 +2,11 @@ package game;
 
 public class Game {
 
-		String currentPlayer;
+		static String currentPlayer;
 		Board board = new Board(3, 3);
-		public MoveResult makeMove(){
-			
-			//if they click this
-//			if (board.)
-			return MoveResult.InvalidMove;	
-		}
 		
-		
-		
-		public void switchPlayer(){
+	
+		public static void switchPlayer(){
 		String player1 = "Player One";
 		String player2 = "Player Two";
 		
