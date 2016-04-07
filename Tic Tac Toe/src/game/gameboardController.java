@@ -7,9 +7,12 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import game.*;
+import game.Game.*;
 
 public class gameboardController {
+	Game tic = new Game();
+	
+	
 
     @FXML
     private ImageView imgMove1;
@@ -44,6 +47,9 @@ public class gameboardController {
     @FXML
     private Button btnRestart;
 
+  
+    
+    
     Image imgX = new Image("http://fc07.deviantart.net/fs71/i/2010/049/4/e/The_Letter_X_by_xelenelunny.jpg");
     Image imgO = new Image("http://www.westonsigns.com/images/P/WSCL1_O_FIRE-01.jpg");
     @FXML
@@ -57,6 +63,7 @@ public class gameboardController {
     	if(source instanceof ImageView){
     		ImageView iv = (ImageView) source;
     		System.out.println(iv.getId());
+    		((ImageView) source).setImage(value);
     	}
     }
     

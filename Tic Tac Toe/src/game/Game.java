@@ -18,6 +18,15 @@ public class Game {
 		else currentPlayer = player1;
 				
 		
-	}
+		}
+		
+		public static String getCurentPlayer(){
+			return currentPlayer;
+		}
+		
+		public Board reset(){
+			Board b = new Board();
+			return b;
+		}
 
 }
