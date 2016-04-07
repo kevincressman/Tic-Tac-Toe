@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import game.*;
 
 public class gameboardController {
 
@@ -57,6 +58,10 @@ public class gameboardController {
     		ImageView iv = (ImageView) source;
     		System.out.println(iv.getId());
     	}
+    }
+    
+    public void RestartGame(){
+    	
     }
 
 }

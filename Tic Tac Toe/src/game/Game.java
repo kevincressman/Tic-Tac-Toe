@@ -1,9 +1,11 @@
 package game;
 
+import game.*;
+
 public class Game {
 
 		static String currentPlayer;
-		Board board = new Board(3, 3);
+		Board board = new Board();
 		
 	
 		public static void switchPlayer(){
