@@ -20,7 +20,7 @@ public class Game {
 		
 		}
 		
-		public static String getCurentPlayer(){
+		public String getCurentPlayer(){
 			return currentPlayer;
 		}
 		

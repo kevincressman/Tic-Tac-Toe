@@ -63,12 +63,66 @@ public class gameboardController {
     	if(source instanceof ImageView){
     		ImageView iv = (ImageView) source;
     		System.out.println(iv.getId());
-    		((ImageView) source).setImage(value);
+    		getCoordinate(iv.getId().toString());
+    		
+    		}
+    			
+    		
+    		//is move valid?
+    		
+    		
+    		//only if things are valid and no winner
+    		String player = tic.getCurentPlayer();
+    			if (player == "Player One"){
+    				((ImageView) source).setImage(imgX);
+    				tic.switchPlayer();
+    			}
+    			else {
+    				((ImageView) source).setImage(imgO);
+    			tic.switchPlayer();
+    			}
+    			
+    			//check for winner
+    			
     	}
-    }
+    
     
     public void RestartGame(){
+    	tic.reset();
     	
     }
-
+    public String getCoordinate(String s){
+    	String coordinate = "";
+		switch (s){
+		case "imgMove1":
+			coordinate = "[0][0]"; 
+			break;
+		case "imgMove2":
+			coordinate = "[1][0]";
+			break;
+		case "imgMove3":
+			coordinate = "[2][0]";
+			break;
+		case "imgMove4":
+			coordinate = "[1][0]";
+			break;
+		case "imgMove5":
+			coordinate = "[1][1]";
+			break;
+		case "imgMove6":
+			coordinate = "[1][2]";
+			break;
+		case "imgMove7":
+			coordinate = "[2][0]";
+			break;
+		case "imgMove8":
+			coordinate = "[2][1]";
+			break;
+		case "imgMove9":
+			coordinate = "[2][2]";
+			break;
+			
+		}
+		return coordinate;
+    }
 }
